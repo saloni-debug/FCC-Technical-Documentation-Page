@@ -1,0 +1,111 @@
+body{
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+#navbar{
+	width: 25%;
+	display:inline-block;
+	vertical-align: top;
+	height: 100%;
+	position: fixed;
+	left: 0;
+    top: 0;
+	border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+}
+#navbar li{
+	color: #4d4e53;
+    border-top: 1px solid;
+	list-style: none;
+	padding-top:3px;
+	width: 100%;
+	cursor: pointer;
+}
+#navbar li:nth-child(2n+1) {
+	background-color: lightgrey;
+	}
+#navbar li:hover{
+	font-weight: bold;
+}
+#navbar a {
+  display: inline-block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  
+}
+#navbar ul{
+	height: 88%;
+	padding: 0px;
+	overflow-y: auto;
+    overflow-x: hidden;
+}
+#navbar header{
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 300px;
+}
+#main-doc{
+	margin-left: 340px;
+    width: 70%;
+	padding-left: 30px;
+}
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+  color: black;
+  font-size: 1.8em;
+  font-weight: 300px;
+}
+#Introduction{
+	margin-top: 25px;
+}
+article{
+	padding-left: 20px;
+	border-top: 1px solid lightgray;
+}
+article ul{
+	padding-left: 50px;
+}
+article li{
+	margin-bottom: 12px;
+}
+code{
+	display: block;
+    padding: 12px;
+    background-color: lightgray;
+    border-radius: 3px;
+    margin: 10px;
+}
+@media (min-width:362px) and (max-width: 768px){
+	#navbar,#main-doc{
+		width: 100%;
+		display: block;
+	}
+	#navbar{
+		position:absolute;
+		height: 200px;
+		z-index: 1;
+	}
+	#main-doc{
+	margin-left: 0px;
+	position: relative;
+	margin-top: 250px;
+	padding: 0px;
+	}
+	article header{
+		font-size: 1.4em;
+		padding-left: 0px;
+	}
+	article ul{
+		padding-left: 30px;
+	}
+	article li{
+		padding-left: 3px;
+	}
+	
+}
